@@ -1,0 +1,32 @@
+/* Default (Light) */
+:root {
+    --bs-primary: #5c3d99;
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #212529;
+  }
+
+  /* Auto-apply Dark Mode from system */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bs-primary: #9b59b6;
+      --bs-body-bg: #121212;
+      --bs-body-color: #f0f0f0;
+    }
+  }
+
+  [data-theme='dark'] {
+    --bs-primary: #9b59b6;
+    --bs-body-bg: #121212;
+    --bs-body-color: #f0f0f0;
+  }
+
+  [data-theme='light'] {
+    --bs-primary: #5c3d99;
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #212529;
+  }
+
+  body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+  }
